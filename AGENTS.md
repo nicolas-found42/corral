@@ -6,9 +6,9 @@ Guidance for any AI agent working in this repository.
 
 **The Corral** — five tables of four `meta-llama/llama-3.1-8b-instruct` agents
 talking at once, all on one shared seed, refereed live by **TypeSafe Jev 1.13**
-through the TypeSafe Python SDK (OpenRouter's System One endpoint). The judgement
-model picks every speaker, grades every line, steers the room's thread, and decides
-when one table overhears another.
+on OpenRouter's System One endpoint. The judgement model picks every speaker,
+grades every line, steers the room's thread, and decides when one table overhears
+another.
 
 The full design and provenance live in [`README.md`](./README.md). What the
 experiments found lives in [`FINDINGS.md`](./FINDINGS.md).
@@ -58,13 +58,12 @@ cargo run --bin method_compare
 
 - **Every judgement the app makes is TypeSafe Jev's, not a rule in code.** If a new
   decision is semantic — who speaks, what a line means, whether a table is
-  drifting — it belongs in `judge.py` as a typed question, batched into the
-  existing per-turn fan-out rather than added as a new request.
+  drifting — it belongs as a typed question, batched into the existing per-turn
+  fan-out rather than added as a new request.
 - **Costs are measured, never assumed.** The llama is the cheap part; the judgement
   model is the point. A run is ~$0.012 for 10 rounds.
-- **Thresholds are calibrated from data.** `judge.LEAK_WORTH` carries a comment
-  explaining how it was measured and re-checked; keep that discipline for any new
-  threshold.
+- **Thresholds are calibrated from data.** `LEAK_WORTH` carries a comment explaining
+  how it was measured and re-checked; keep that discipline for any new threshold.
 - **Identity never rests on colour alone** — every llama carries a sigil + name;
   `f` toggles a flat, colourless mode.
 - Tests are offline by design. Anything that would spend money stays out of

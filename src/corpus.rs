@@ -1,6 +1,7 @@
 //! The corpus: 36 real lines The Corral produced, captured off disk and from
 //! live runs. NO llama calls here -- the experiments read this and ask Jev
-//! questions about it. Generated from the original corpus.py.
+//! questions about it. Captured before the Rust port; the pre-port source is in
+//! the commit history.
 #![allow(clippy::redundant_static_lifetimes)]
 
 /// One real transcript line.

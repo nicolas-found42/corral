@@ -1,7 +1,8 @@
-//! The twenty llamas of The Corral. Generated from the original personas.py.
+//! The twenty llamas of The Corral.
 #![allow(clippy::redundant_static_lifetimes)]
 //!
 //! Identity rests on a sigil + initial, never on colour alone.
+//! This data was transcribed from the pre-port Python source (see commit history).
 
 /// A single llama: one cheap llama-3.1-8b instance with a short, distinct voice.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
