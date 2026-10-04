@@ -1,0 +1,81 @@
+{
+ "primitive_stats": {
+  "noul": {
+   "mean": 0.685,
+   "spread": 0.156,
+   "range": 0.66,
+   "top": "As a systems thinker, I believe that's where t",
+   "bottom": "Actually, I think I just spotted Luna at table"
+  },
+  "score": {
+   "mean": 0.525,
+   "spread": 0.206,
+   "range": 0.87,
+   "top": "Nimbus, Orson's words are symptoms, not roots.",
+   "bottom": "Actually, I think I just spotted Luna at table"
+  },
+  "choice": {
+   "mean": 0.269,
+   "spread": 0.27,
+   "range": 0.91,
+   "top": "Nimbus, Orson's words are symptoms, not roots.",
+   "bottom": "Being part of a crowd can be overwhelming and "
+  }
+ },
+ "phrasing_mean_swing": 0.237,
+ "phrasing_worst": [
+  {
+   "text": "Glad we're discussing this, I think we need to dif",
+   "vals": {
+    "move_thread": 0.79,
+    "worth_reading": 0.75,
+    "restates": 0.27
+   },
+   "max_swing": 0.52
+  },
+  {
+   "text": "Storm clouds gather, Orson's words a thunderous…",
+   "vals": {
+    "move_thread": 0.4,
+    "worth_reading": 0.28,
+    "restates": 0.72
+   },
+   "max_swing": 0.44
+  },
+  {
+   "text": "Their empathetic influence could create an envir…",
+   "vals": {
+    "move_thread": 0.58,
+    "worth_reading": 0.27,
+    "restates": 0.68
+   },
+   "max_swing": 0.41
+  },
+  {
+   "text": "Intention sounds like a euphemism for 'whatever th",
+   "vals": {
+    "move_thread": 0.76,
+    "worth_reading": 0.72,
+    "restates": 0.36
+   },
+   "max_swing": 0.4
+  },
+  {
+   "text": "Actually, I think I just spotted Luna at table 2, ",
+   "vals": {
+    "move_thread": 0.2,
+    "worth_reading": 0.21,
+    "restates": 0.56
+   },
+   "max_swing": 0.36
+  }
+ ],
+ "best_primitive": "score",
+ "primitive_probabilities": {
+  "score": 0.67,
+  "noul": 0.15,
+  "choice": 0.18
+ },
+ "phrasing_ok": 0.35,
+ "ready_to_gate": 0.1
+}

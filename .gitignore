@@ -1,0 +1,16 @@
+# venv and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+launch.sh
+
+# demo artifacts (regenerate with snapshot.py)
+corral.png
+
+# saved conversations
+corral-*.txt
+
+# local launch helpers
+launch.sh
+The Corral.command

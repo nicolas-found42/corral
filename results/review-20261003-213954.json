@@ -1,0 +1,75 @@
+{
+ "table": {
+  "leak-absorption": {
+   "signal": 0.55,
+   "trust": 0.36,
+   "surprise": 0.44,
+   "rerun": 0.65,
+   "composite": 0.51
+  },
+  "seed-fidelity": {
+   "signal": 0.6,
+   "trust": 0.45,
+   "surprise": 0.43,
+   "rerun": 0.7,
+   "composite": 0.556
+  },
+  "cohesion-vs-quality": {
+   "signal": 0.54,
+   "trust": 0.43,
+   "surprise": 0.44,
+   "rerun": 0.69,
+   "composite": 0.528
+  },
+  "voice-distinctness": {
+   "signal": 0.53,
+   "trust": 0.47,
+   "surprise": 0.48,
+   "rerun": 0.71,
+   "composite": 0.544
+  },
+  "leak-gate": {
+   "signal": 0.65,
+   "trust": 0.44,
+   "surprise": 0.46,
+   "rerun": 0.69,
+   "composite": 0.578
+  },
+  "unanswered": {
+   "signal": 0.76,
+   "trust": 0.46,
+   "surprise": 0.48,
+   "rerun": 0.67,
+   "composite": 0.626
+  },
+  "redundancy": {
+   "signal": 0.45,
+   "trust": 0.44,
+   "surprise": 0.43,
+   "rerun": 0.69,
+   "composite": 0.492
+  },
+  "best-line": {
+   "signal": 0.18,
+   "trust": 0.36,
+   "surprise": 0.43,
+   "rerun": 0.53,
+   "composite": 0.336
+  }
+ },
+ "keep": "seed-fidelity",
+ "keep_confidence": 0.47,
+ "drop": "best-line",
+ "next": "ablate_leak",
+ "next_probabilities": {
+  "question_phrasing": 0.02,
+  "nothing": 0.0,
+  "primitive_choice": 0.12,
+  "cross_table_agreement": 0.08,
+  "perturb_seed": 0.08,
+  "score_calibration": 0.2,
+  "bigger_corpus": 0.12,
+  "agent_reliability": 0.08,
+  "ablate_leak": 0.3
+ }
+}

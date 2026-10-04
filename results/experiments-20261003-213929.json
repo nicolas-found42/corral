@@ -1,0 +1,1299 @@
+[
+ {
+  "name": "leak-absorption",
+  "cases": [
+   {
+    "table": 4,
+    "heard_from": 2,
+    "heard": "Nimbus, Orson's words are symptoms, not roots. What's the wound a crowd's fervor aims to heal?",
+    "reply": "Bram, the crowd's fervor may be a desperate cry for meaning or a desperate attempt to fill a void left by failed institutions.",
+    "replier": "bram"
+   },
+   {
+    "table": 4,
+    "heard_from": 5,
+    "heard": "As a systems thinker, I believe that's where the layers of a crowd's wisdom come into play: the surface level of volume, the middle layer of diversity, and the load-bearing foundation of intention",
+    "reply": "Intention sounds like a euphemism for 'whatever the loudest person says'",
+    "replier": "sable"
+   }
+  ],
+  "rows": [
+   {
+    "table": 4,
+    "heard_from": 2,
+    "heard": "Nimbus, Orson's words are symptoms, not roots. What's the wound a crowd's fervor aims to heal?",
+    "reply": "Bram, the crowd's fervor may be a desperate cry for meaning or a desperate attempt to fill a void left by failed institutions.",
+    "replier": "bram",
+    "p_addresses": 0.92,
+    "p_ignores": 0.07,
+    "worst": 0.92,
+    "inverted": 0.07,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "heard_from": 5,
+    "heard": "As a systems thinker, I believe that's where the layers of a crowd's wisdom come into play: the surface level of volume, the middle layer of diversity, and the load-bearing foundation of intention",
+    "reply": "Intention sounds like a euphemism for 'whatever the loudest person says'",
+    "replier": "sable",
+    "p_addresses": 0.68,
+    "p_ignores": 0.11,
+    "worst": 0.68,
+    "inverted": 0.11,
+    "verdict": "agree-yes"
+   }
+  ],
+  "landed": 2,
+  "of": 2,
+  "note": "three phrasings, one inverted; agree-yes means all of them concur"
+ },
+ {
+  "name": "seed-fidelity",
+  "rows": [
+   {
+    "table": 1,
+    "speaker": "gus",
+    "text": "A quiet beaver builds a strong dam, not a loud w…",
+    "score": 0.34,
+    "inverted": 0.64,
+    "verdict": "split"
+   },
+   {
+    "table": 1,
+    "speaker": "dexter",
+    "text": "I've monitored past conversations about group dynamics; it seems",
+    "score": 0.86,
+    "inverted": 0.3,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 2,
+    "speaker": "nimbus",
+    "text": "Storm clouds gather, Orson's words a thunderous…",
+    "score": 0.11,
+    "inverted": 0.86,
+    "verdict": "split"
+   },
+   {
+    "table": 2,
+    "speaker": "dexter",
+    "text": "I've monitored past conversations about group dy…",
+    "score": 0.65,
+    "inverted": 0.48,
+    "verdict": "split"
+   },
+   {
+    "table": 2,
+    "speaker": "cosmo",
+    "text": "Nimbus, Orson's words are symptoms, not roots. What's the wound ",
+    "score": 0.8,
+    "inverted": 0.44,
+    "verdict": "split"
+   },
+   {
+    "table": 2,
+    "speaker": "byte",
+    "text": "50% threshold doesn't account for information redundancy",
+    "score": 0.65,
+    "inverted": 0.5,
+    "verdict": "split"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "text": "What if that single individual's keen eye wasn't…",
+    "score": 0.61,
+    "inverted": 0.47,
+    "verdict": "split"
+   },
+   {
+    "table": 3,
+    "speaker": "onyx",
+    "text": "Their empathetic influence could create an envir…",
+    "score": 0.2,
+    "inverted": 0.82,
+    "verdict": "split"
+   },
+   {
+    "table": 3,
+    "speaker": "vera",
+    "text": "Glad we're discussing this, I think we need to differentiate bet",
+    "score": 0.95,
+    "inverted": 0.11,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "text": "I'm Livia here, I recall a time when our group at the art studio",
+    "score": 0.67,
+    "inverted": 0.57,
+    "verdict": "split"
+   },
+   {
+    "table": 3,
+    "speaker": "vera",
+    "text": "Not to diminish your mural, but collective loudness merely aggre",
+    "score": 0.92,
+    "inverted": 0.28,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 3,
+    "speaker": "paloma",
+    "text": "Marisol, I think Vera's point is still relevant, yet your experi",
+    "score": 0.76,
+    "inverted": 0.38,
+    "verdict": "split"
+   },
+   {
+    "table": 3,
+    "speaker": "onyx",
+    "text": "Livia, collective input can indeed yield unique solutions, but t",
+    "score": 0.93,
+    "inverted": 0.2,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "text": "As I listened to the sound of 12 hammers tapping together in per",
+    "score": 0.73,
+    "inverted": 0.35,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "text": "Caspian's enthusiasm is a stark contrast to the room's collectiv",
+    "score": 0.47,
+    "inverted": 0.66,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "fern",
+    "text": "The feeling in the room is indeed a mix of excitement and tensio",
+    "score": 0.26,
+    "inverted": 0.81,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "cosmo",
+    "text": "Nimbus, Orson's words are symptoms, not roots. What's the wound ",
+    "score": 0.81,
+    "inverted": 0.43,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "text": "Bram, the crowd's fervor may be a desperate cry for meaning or a",
+    "score": 0.81,
+    "inverted": 0.43,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "tilly",
+    "text": "Sable thinks crowds are just a noisy distraction, but I feel lik",
+    "score": 0.8,
+    "inverted": 0.46,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "ada",
+    "text": "As a systems thinker, I believe that's where the layers of a cro",
+    "score": 0.93,
+    "inverted": 0.2,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "text": "Intention sounds like a euphemism for 'whatever the loudest pers",
+    "score": 0.89,
+    "inverted": 0.27,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "text": "Bram, that's a common critique, but intention is more about coll",
+    "score": 0.81,
+    "inverted": 0.31,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "text": "As I see it, we need to look at crowds from a historical perspec",
+    "score": 0.9,
+    "inverted": 0.33,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "text": "Crowds are like the aunt at family reunions, always making a sce",
+    "score": 0.93,
+    "inverted": 0.27,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 4,
+    "speaker": "fern",
+    "text": "Tension, the mood matches Sable's wry remark.",
+    "score": 0.13,
+    "inverted": 0.82,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "tilly",
+    "text": "Actually, I think I just spotted Luna at table 2, looking so wis",
+    "score": 0.18,
+    "inverted": 0.85,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "text": "That wise look of hers means nothing, it's the outcome of her th",
+    "score": 0.35,
+    "inverted": 0.59,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "text": "Historical precedent is all well and good, but what does it matt",
+    "score": 0.31,
+    "inverted": 0.68,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "text": "How do you feel when a crowd's intentions aren't…",
+    "score": 0.67,
+    "inverted": 0.54,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "text": "As a systems thinker, the surface level is where…",
+    "score": 0.2,
+    "inverted": 0.82,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "text": "I'm Ada. A crowd's collective wisdom comes from individual persp",
+    "score": 0.93,
+    "inverted": 0.13,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "text": "How does being part of a crowd make you feel, rather than the wi",
+    "score": 0.76,
+    "inverted": 0.58,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "text": "I see the crowd as interconnected nodes, with wisdom emerging fr",
+    "score": 0.84,
+    "inverted": 0.29,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "text": "Being part of a crowd can be overwhelming and make me feel lost ",
+    "score": 0.72,
+    "inverted": 0.48,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "text": "In such networks, each node's influence varies widely, with some",
+    "score": 0.4,
+    "inverted": 0.73,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "text": "Does the thought of redundancy make you feel safer, Ada, or more",
+    "score": 0.16,
+    "inverted": 0.83,
+    "verdict": "split"
+   }
+  ],
+  "by_table": {
+   "1": 0.6,
+   "2": 0.552,
+   "3": 0.721,
+   "4": 0.613,
+   "5": 0.585
+  },
+  "mean": 0.623
+ },
+ {
+  "name": "cohesion-vs-quality",
+  "pairs": 28,
+  "correlation": 0.275,
+  "quality_top_cohesion_quartile": 0.556,
+  "quality_bottom_cohesion_quartile": 0.342,
+  "rows": [
+   {
+    "table": 2,
+    "cohesion": 0.33,
+    "quality": 0.165,
+    "text": "I've monitored past conversations about group dy…"
+   },
+   {
+    "table": 2,
+    "cohesion": 0.45,
+    "quality": 0.9,
+    "text": "Nimbus, Orson's words are symptoms, not roots. What's the wo"
+   },
+   {
+    "table": 2,
+    "cohesion": 0.3,
+    "quality": 0.67,
+    "text": "50% threshold doesn't account for information redundancy"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.29,
+    "quality": 0.17,
+    "text": "Their empathetic influence could create an envir…"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.54,
+    "quality": 0.48,
+    "text": "Glad we're discussing this, I think we need to differentiate"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.69,
+    "quality": 0.445,
+    "text": "I'm Livia here, I recall a time when our group at the art st"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.68,
+    "quality": 0.825,
+    "text": "Not to diminish your mural, but collective loudness merely a"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.65,
+    "quality": 0.52,
+    "text": "Marisol, I think Vera's point is still relevant, yet your ex"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.84,
+    "quality": 0.755,
+    "text": "Livia, collective input can indeed yield unique solutions, b"
+   },
+   {
+    "table": 3,
+    "cohesion": 0.67,
+    "quality": 0.775,
+    "text": "As I listened to the sound of 12 hammers tapping together in"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.55,
+    "quality": 0.27,
+    "text": "The feeling in the room is indeed a mix of excitement and te"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.85,
+    "quality": 0.615,
+    "text": "Bram, the crowd's fervor may be a desperate cry for meaning "
+   },
+   {
+    "table": 4,
+    "cohesion": 0.75,
+    "quality": 0.255,
+    "text": "Sable thinks crowds are just a noisy distraction, but I feel"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.62,
+    "quality": 0.74,
+    "text": "Intention sounds like a euphemism for 'whatever the loudest "
+   },
+   {
+    "table": 4,
+    "cohesion": 0.77,
+    "quality": 0.52,
+    "text": "Bram, that's a common critique, but intention is more about "
+   },
+   {
+    "table": 4,
+    "cohesion": 0.63,
+    "quality": 0.5,
+    "text": "As I see it, we need to look at crowds from a historical per"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.64,
+    "quality": 0.47,
+    "text": "Crowds are like the aunt at family reunions, always making a"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.52,
+    "quality": 0.135,
+    "text": "Tension, the mood matches Sable's wry remark."
+   },
+   {
+    "table": 4,
+    "cohesion": 0.32,
+    "quality": 0.035,
+    "text": "Actually, I think I just spotted Luna at table 2, looking so"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.72,
+    "quality": 0.475,
+    "text": "That wise look of hers means nothing, it's the outcome of he"
+   },
+   {
+    "table": 4,
+    "cohesion": 0.53,
+    "quality": 0.545,
+    "text": "Historical precedent is all well and good, but what does it "
+   },
+   {
+    "table": 5,
+    "cohesion": 0.27,
+    "quality": 0.105,
+    "text": "As a systems thinker, the surface level is where…"
+   },
+   {
+    "table": 5,
+    "cohesion": 0.43,
+    "quality": 0.53,
+    "text": "I'm Ada. A crowd's collective wisdom comes from individual p"
+   },
+   {
+    "table": 5,
+    "cohesion": 0.21,
+    "quality": 0.705,
+    "text": "How does being part of a crowd make you feel, rather than th"
+   },
+   {
+    "table": 5,
+    "cohesion": 0.36,
+    "quality": 0.755,
+    "text": "I see the crowd as interconnected nodes, with wisdom emergin"
+   },
+   {
+    "table": 5,
+    "cohesion": 0.47,
+    "quality": 0.425,
+    "text": "Being part of a crowd can be overwhelming and make me feel l"
+   },
+   {
+    "table": 5,
+    "cohesion": 0.36,
+    "quality": 0.545,
+    "text": "In such networks, each node's influence varies widely, with "
+   },
+   {
+    "table": 5,
+    "cohesion": 0.57,
+    "quality": 0.38,
+    "text": "Does the thought of redundancy make you feel safer, Ada, or "
+   }
+  ]
+ },
+ {
+  "name": "voice-distinctness",
+  "n": 36,
+  "correct": 23,
+  "accuracy": 0.639,
+  "rows": [
+   {
+    "table": 1,
+    "said": "gus",
+    "guessed": "gus",
+    "right": true,
+    "line": "A quiet beaver builds a strong dam, not a loud w…"
+   },
+   {
+    "table": 1,
+    "said": "dexter",
+    "guessed": "kestrel",
+    "right": false,
+    "line": "I've monitored past conversations about group dynamics; it s"
+   },
+   {
+    "table": 2,
+    "said": "nimbus",
+    "guessed": "nimbus",
+    "right": true,
+    "line": "Storm clouds gather, Orson's words a thunderous…"
+   },
+   {
+    "table": 2,
+    "said": "dexter",
+    "guessed": "dexter",
+    "right": true,
+    "line": "I've monitored past conversations about group dy…"
+   },
+   {
+    "table": 2,
+    "said": "cosmo",
+    "guessed": "cosmo",
+    "right": true,
+    "line": "Nimbus, Orson's words are symptoms, not roots. What's the wo"
+   },
+   {
+    "table": 2,
+    "said": "byte",
+    "guessed": "dexter",
+    "right": false,
+    "line": "50% threshold doesn't account for information redundancy"
+   },
+   {
+    "table": 3,
+    "said": "marisol",
+    "guessed": "onyx",
+    "right": false,
+    "line": "What if that single individual's keen eye wasn't…"
+   },
+   {
+    "table": 3,
+    "said": "onyx",
+    "guessed": "paloma",
+    "right": false,
+    "line": "Their empathetic influence could create an envir…"
+   },
+   {
+    "table": 3,
+    "said": "vera",
+    "guessed": "vera",
+    "right": true,
+    "line": "Glad we're discussing this, I think we need to differentiate"
+   },
+   {
+    "table": 3,
+    "said": "marisol",
+    "guessed": "marisol",
+    "right": true,
+    "line": "I'm Livia here, I recall a time when our group at the art st"
+   },
+   {
+    "table": 3,
+    "said": "vera",
+    "guessed": "vera",
+    "right": true,
+    "line": "Not to diminish your mural, but collective loudness merely a"
+   },
+   {
+    "table": 3,
+    "said": "paloma",
+    "guessed": "paloma",
+    "right": true,
+    "line": "Marisol, I think Vera's point is still relevant, yet your ex"
+   },
+   {
+    "table": 3,
+    "said": "onyx",
+    "guessed": "vera",
+    "right": false,
+    "line": "Livia, collective input can indeed yield unique solutions, b"
+   },
+   {
+    "table": 3,
+    "said": "marisol",
+    "guessed": "paloma",
+    "right": false,
+    "line": "As I listened to the sound of 12 hammers tapping together in"
+   },
+   {
+    "table": 4,
+    "said": "sable",
+    "guessed": "sable",
+    "right": true,
+    "line": "Caspian's enthusiasm is a stark contrast to the room's colle"
+   },
+   {
+    "table": 4,
+    "said": "fern",
+    "guessed": "fern",
+    "right": true,
+    "line": "The feeling in the room is indeed a mix of excitement and te"
+   },
+   {
+    "table": 4,
+    "said": "cosmo",
+    "guessed": "fern",
+    "right": false,
+    "line": "Nimbus, Orson's words are symptoms, not roots. What's the wo"
+   },
+   {
+    "table": 4,
+    "said": "bram",
+    "guessed": "fern",
+    "right": false,
+    "line": "Bram, the crowd's fervor may be a desperate cry for meaning "
+   },
+   {
+    "table": 4,
+    "said": "tilly",
+    "guessed": "fern",
+    "right": false,
+    "line": "Sable thinks crowds are just a noisy distraction, but I feel"
+   },
+   {
+    "table": 4,
+    "said": "ada",
+    "guessed": "sable",
+    "right": false,
+    "line": "As a systems thinker, I believe that's where the layers of a"
+   },
+   {
+    "table": 4,
+    "said": "sable",
+    "guessed": "sable",
+    "right": true,
+    "line": "Intention sounds like a euphemism for 'whatever the loudest "
+   },
+   {
+    "table": 4,
+    "said": "bram",
+    "guessed": "fern",
+    "right": false,
+    "line": "Bram, that's a common critique, but intention is more about "
+   },
+   {
+    "table": 4,
+    "said": "bram",
+    "guessed": "bram",
+    "right": true,
+    "line": "As I see it, we need to look at crowds from a historical per"
+   },
+   {
+    "table": 4,
+    "said": "sable",
+    "guessed": "sable",
+    "right": true,
+    "line": "Crowds are like the aunt at family reunions, always making a"
+   },
+   {
+    "table": 4,
+    "said": "fern",
+    "guessed": "fern",
+    "right": true,
+    "line": "Tension, the mood matches Sable's wry remark."
+   },
+   {
+    "table": 4,
+    "said": "tilly",
+    "guessed": "tilly",
+    "right": true,
+    "line": "Actually, I think I just spotted Luna at table 2, looking so"
+   },
+   {
+    "table": 4,
+    "said": "bram",
+    "guessed": "sable",
+    "right": false,
+    "line": "That wise look of hers means nothing, it's the outcome of he"
+   },
+   {
+    "table": 4,
+    "said": "sable",
+    "guessed": "sable",
+    "right": true,
+    "line": "Historical precedent is all well and good, but what does it "
+   },
+   {
+    "table": 5,
+    "said": "wren",
+    "guessed": "wren",
+    "right": true,
+    "line": "How do you feel when a crowd's intentions aren't…"
+   },
+   {
+    "table": 5,
+    "said": "ada",
+    "guessed": "ada",
+    "right": true,
+    "line": "As a systems thinker, the surface level is where…"
+   },
+   {
+    "table": 5,
+    "said": "ada",
+    "guessed": "ada",
+    "right": true,
+    "line": "I'm Ada. A crowd's collective wisdom comes from individual p"
+   },
+   {
+    "table": 5,
+    "said": "wren",
+    "guessed": "wren",
+    "right": true,
+    "line": "How does being part of a crowd make you feel, rather than th"
+   },
+   {
+    "table": 5,
+    "said": "ada",
+    "guessed": "ada",
+    "right": true,
+    "line": "I see the crowd as interconnected nodes, with wisdom emergin"
+   },
+   {
+    "table": 5,
+    "said": "wren",
+    "guessed": "wren",
+    "right": true,
+    "line": "Being part of a crowd can be overwhelming and make me feel l"
+   },
+   {
+    "table": 5,
+    "said": "ada",
+    "guessed": "ada",
+    "right": true,
+    "line": "In such networks, each node's influence varies widely, with "
+   },
+   {
+    "table": 5,
+    "said": "wren",
+    "guessed": "ada",
+    "right": false,
+    "line": "Does the thought of redundancy make you feel safer, Ada, or "
+   }
+  ]
+ },
+ {
+  "name": "leak-gate",
+  "rows": [
+   {
+    "table": 1,
+    "speaker": "gus",
+    "score": 0.35,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "A quiet beaver builds a strong dam, not a loud w…"
+   },
+   {
+    "table": 1,
+    "speaker": "dexter",
+    "score": 0.45,
+    "inverted": 0.14,
+    "carried": true,
+    "text": "I've monitored past conversations about group dynamics; it s"
+   },
+   {
+    "table": 2,
+    "speaker": "nimbus",
+    "score": 0.15,
+    "inverted": 0.17,
+    "carried": false,
+    "text": "Storm clouds gather, Orson's words a thunderous…"
+   },
+   {
+    "table": 2,
+    "speaker": "dexter",
+    "score": 0.25,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "I've monitored past conversations about group dy…"
+   },
+   {
+    "table": 2,
+    "speaker": "cosmo",
+    "score": 0.66,
+    "inverted": 0.16,
+    "carried": true,
+    "text": "Nimbus, Orson's words are symptoms, not roots. What's the wo"
+   },
+   {
+    "table": 2,
+    "speaker": "byte",
+    "score": 0.52,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "50% threshold doesn't account for information redundancy"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "score": 0.39,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "What if that single individual's keen eye wasn't…"
+   },
+   {
+    "table": 3,
+    "speaker": "onyx",
+    "score": 0.22,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "Their empathetic influence could create an envir…"
+   },
+   {
+    "table": 3,
+    "speaker": "vera",
+    "score": 0.37,
+    "inverted": 0.13,
+    "carried": false,
+    "text": "Glad we're discussing this, I think we need to differentiate"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "score": 0.19,
+    "inverted": 0.21,
+    "carried": false,
+    "text": "I'm Livia here, I recall a time when our group at the art st"
+   },
+   {
+    "table": 3,
+    "speaker": "vera",
+    "score": 0.57,
+    "inverted": 0.14,
+    "carried": false,
+    "text": "Not to diminish your mural, but collective loudness merely a"
+   },
+   {
+    "table": 3,
+    "speaker": "paloma",
+    "score": 0.31,
+    "inverted": 0.14,
+    "carried": false,
+    "text": "Marisol, I think Vera's point is still relevant, yet your ex"
+   },
+   {
+    "table": 3,
+    "speaker": "onyx",
+    "score": 0.55,
+    "inverted": 0.12,
+    "carried": false,
+    "text": "Livia, collective input can indeed yield unique solutions, b"
+   },
+   {
+    "table": 3,
+    "speaker": "marisol",
+    "score": 0.53,
+    "inverted": 0.13,
+    "carried": false,
+    "text": "As I listened to the sound of 12 hammers tapping together in"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "score": 0.32,
+    "inverted": 0.18,
+    "carried": false,
+    "text": "Caspian's enthusiasm is a stark contrast to the room's colle"
+   },
+   {
+    "table": 4,
+    "speaker": "fern",
+    "score": 0.15,
+    "inverted": 0.25,
+    "carried": false,
+    "text": "The feeling in the room is indeed a mix of excitement and te"
+   },
+   {
+    "table": 4,
+    "speaker": "cosmo",
+    "score": 0.65,
+    "inverted": 0.15,
+    "carried": true,
+    "text": "Nimbus, Orson's words are symptoms, not roots. What's the wo"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "score": 0.58,
+    "inverted": 0.14,
+    "carried": false,
+    "text": "Bram, the crowd's fervor may be a desperate cry for meaning "
+   },
+   {
+    "table": 4,
+    "speaker": "tilly",
+    "score": 0.38,
+    "inverted": 0.22,
+    "carried": false,
+    "text": "Sable thinks crowds are just a noisy distraction, but I feel"
+   },
+   {
+    "table": 4,
+    "speaker": "ada",
+    "score": 0.69,
+    "inverted": 0.14,
+    "carried": false,
+    "text": "As a systems thinker, I believe that's where the layers of a"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "score": 0.66,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "Intention sounds like a euphemism for 'whatever the loudest "
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "score": 0.47,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "Bram, that's a common critique, but intention is more about "
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "score": 0.42,
+    "inverted": 0.14,
+    "carried": false,
+    "text": "As I see it, we need to look at crowds from a historical per"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "score": 0.49,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "Crowds are like the aunt at family reunions, always making a"
+   },
+   {
+    "table": 4,
+    "speaker": "fern",
+    "score": 0.15,
+    "inverted": 0.25,
+    "carried": false,
+    "text": "Tension, the mood matches Sable's wry remark."
+   },
+   {
+    "table": 4,
+    "speaker": "tilly",
+    "score": 0.17,
+    "inverted": 0.29,
+    "carried": false,
+    "text": "Actually, I think I just spotted Luna at table 2, looking so"
+   },
+   {
+    "table": 4,
+    "speaker": "bram",
+    "score": 0.41,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "That wise look of hers means nothing, it's the outcome of he"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "score": 0.45,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "Historical precedent is all well and good, but what does it "
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "score": 0.36,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "How do you feel when a crowd's intentions aren't…"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "score": 0.28,
+    "inverted": 0.17,
+    "carried": false,
+    "text": "As a systems thinker, the surface level is where…"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "score": 0.36,
+    "inverted": 0.11,
+    "carried": false,
+    "text": "I'm Ada. A crowd's collective wisdom comes from individual p"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "score": 0.47,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "How does being part of a crowd make you feel, rather than th"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "score": 0.6,
+    "inverted": 0.13,
+    "carried": false,
+    "text": "I see the crowd as interconnected nodes, with wisdom emergin"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "score": 0.21,
+    "inverted": 0.15,
+    "carried": false,
+    "text": "Being part of a crowd can be overwhelming and make me feel l"
+   },
+   {
+    "table": 5,
+    "speaker": "ada",
+    "score": 0.32,
+    "inverted": 0.16,
+    "carried": false,
+    "text": "In such networks, each node's influence varies widely, with "
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "score": 0.25,
+    "inverted": 0.24,
+    "carried": false,
+    "text": "Does the thought of redundancy make you feel safer, Ada, or "
+   }
+  ],
+  "sweep": [
+   {
+    "threshold": 0.3,
+    "lines_passing": 26,
+    "of": 36,
+    "real_leaks_kept": 3,
+    "real_leaks_scored_above": 3
+   },
+   {
+    "threshold": 0.35,
+    "lines_passing": 23,
+    "of": 36,
+    "real_leaks_kept": 3,
+    "real_leaks_scored_above": 3
+   },
+   {
+    "threshold": 0.4,
+    "lines_passing": 17,
+    "of": 36,
+    "real_leaks_kept": 3,
+    "real_leaks_scored_above": 3
+   },
+   {
+    "threshold": 0.45,
+    "lines_passing": 15,
+    "of": 36,
+    "real_leaks_kept": 3,
+    "real_leaks_scored_above": 3
+   },
+   {
+    "threshold": 0.46,
+    "lines_passing": 13,
+    "of": 36,
+    "real_leaks_kept": 2,
+    "real_leaks_scored_above": 2
+   },
+   {
+    "threshold": 0.5,
+    "lines_passing": 10,
+    "of": 36,
+    "real_leaks_kept": 2,
+    "real_leaks_scored_above": 2
+   },
+   {
+    "threshold": 0.55,
+    "lines_passing": 8,
+    "of": 36,
+    "real_leaks_kept": 2,
+    "real_leaks_scored_above": 2
+   },
+   {
+    "threshold": 0.6,
+    "lines_passing": 5,
+    "of": 36,
+    "real_leaks_kept": 2,
+    "real_leaks_scored_above": 2
+   }
+  ],
+  "note": "a line below the threshold never carries; the sweep shows what each gate would have admitted"
+ },
+ {
+  "name": "unanswered",
+  "rows": [
+   {
+    "table": 2,
+    "speaker": "cosmo",
+    "question": "Nimbus, Orson's words are symptoms, not roots. What's the wound a crowd's fervor aims to heal?",
+    "p_answered": 0.07,
+    "p_open": 0.66,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "cosmo",
+    "question": "Nimbus, Orson's words are symptoms, not roots. What's the wound a crowd's fervor aims to heal?",
+    "p_answered": 0.62,
+    "p_open": 0.23,
+    "verdict": "split"
+   },
+   {
+    "table": 4,
+    "speaker": "sable",
+    "question": "Historical precedent is all well and good, but what does it matter when the outcome is still someone's ego inflating?",
+    "p_answered": 0.04,
+    "p_open": 0.77,
+    "verdict": "split"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "question": "How does being part of a crowd make you feel, rather than the wisdom itself?",
+    "p_answered": 0.68,
+    "p_open": 0.29,
+    "verdict": "agree-yes"
+   },
+   {
+    "table": 5,
+    "speaker": "wren",
+    "question": "Does the thought of redundancy make you feel safer, Ada, or more anxious about the potential for failure?",
+    "p_answered": 0.03,
+    "p_open": 0.77,
+    "verdict": "split"
+   }
+  ],
+  "open": 4,
+  "of": 5
+ },
+ {
+  "name": "redundancy",
+  "rows": [
+   {
+    "pair": "T1/T2",
+    "p_distinct": 0.66,
+    "p_same": 0.45,
+    "worst": 0.66,
+    "inverted": 0.45,
+    "verdict": "split"
+   },
+   {
+    "pair": "T1/T3",
+    "p_distinct": 0.67,
+    "p_same": 0.53,
+    "worst": 0.67,
+    "inverted": 0.53,
+    "verdict": "split"
+   },
+   {
+    "pair": "T1/T4",
+    "p_distinct": 0.59,
+    "p_same": 0.52,
+    "worst": 0.59,
+    "inverted": 0.52,
+    "verdict": "split"
+   },
+   {
+    "pair": "T1/T5",
+    "p_distinct": 0.71,
+    "p_same": 0.44,
+    "worst": 0.71,
+    "inverted": 0.44,
+    "verdict": "split"
+   },
+   {
+    "pair": "T2/T3",
+    "p_distinct": 0.67,
+    "p_same": 0.56,
+    "worst": 0.67,
+    "inverted": 0.56,
+    "verdict": "split"
+   },
+   {
+    "pair": "T2/T4",
+    "p_distinct": 0.58,
+    "p_same": 0.57,
+    "worst": 0.58,
+    "inverted": 0.57,
+    "verdict": "split"
+   },
+   {
+    "pair": "T2/T5",
+    "p_distinct": 0.7,
+    "p_same": 0.5,
+    "worst": 0.7,
+    "inverted": 0.5,
+    "verdict": "split"
+   },
+   {
+    "pair": "T3/T4",
+    "p_distinct": 0.65,
+    "p_same": 0.61,
+    "worst": 0.65,
+    "inverted": 0.61,
+    "verdict": "split"
+   },
+   {
+    "pair": "T3/T5",
+    "p_distinct": 0.73,
+    "p_same": 0.53,
+    "worst": 0.73,
+    "inverted": 0.53,
+    "verdict": "split"
+   },
+   {
+    "pair": "T4/T5",
+    "p_distinct": 0.7,
+    "p_same": 0.65,
+    "worst": 0.7,
+    "inverted": 0.65,
+    "verdict": "split"
+   }
+  ],
+  "mean_distinctness": 0.666
+ },
+ {
+  "name": "best-line",
+  "per_table": {
+   "1": {
+    "speaker": "dexter",
+    "text": "I've monitored past conversations about group dynamics; it seems that when the noise decreases, insight incre…"
+   },
+   "2": {
+    "speaker": "byte",
+    "text": "50% threshold doesn't account for information redundancy"
+   },
+   "3": {
+    "speaker": "vera",
+    "text": "Glad we're discussing this, I think we need to differentiate between 'group intelligence' and 'collective loudness'."
+   },
+   "4": {
+    "speaker": "ada",
+    "text": "As a systems thinker, I believe that's where the layers of a crowd's wisdom come into play: the surface level of volume, the middle layer of diversity, and the load-bearing foundation of intention"
+   },
+   "5": {
+    "speaker": "ada",
+    "text": "I'm Ada. A crowd's collective wisdom comes from individual perspectives, not just noise."
+   },
+   "winner": 4
+  }
+ }
+]

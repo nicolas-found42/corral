@@ -1,0 +1,90 @@
+{
+ "policies": {
+  "A_strict": 0.5,
+  "B_broad": 0.4
+ },
+ "admitted": {
+  "A_strict": [
+   "Nimbus, Orson's words are symptoms, not roots. What's the wo",
+   "50% threshold doesn't account for information redundancy",
+   "Not to diminish your mural, but collective loudness merely a",
+   "Livia, collective input can indeed yield unique solutions, b",
+   "As I listened to the sound of 12 hammers tapping together in",
+   "Nimbus, Orson's words are symptoms, not roots. What's the wo",
+   "Bram, the crowd's fervor may be a desperate cry for meaning ",
+   "As a systems thinker, I believe that's where the layers of a",
+   "Intention sounds like a euphemism for 'whatever the loudest ",
+   "I see the crowd as interconnected nodes, with wisdom emergin"
+  ],
+  "B_broad": [
+   "I've monitored past conversations about group dynamics; it s",
+   "Nimbus, Orson's words are symptoms, not roots. What's the wo",
+   "50% threshold doesn't account for information redundancy",
+   "Not to diminish your mural, but collective loudness merely a",
+   "Livia, collective input can indeed yield unique solutions, b",
+   "As I listened to the sound of 12 hammers tapping together in",
+   "Nimbus, Orson's words are symptoms, not roots. What's the wo",
+   "Bram, the crowd's fervor may be a desperate cry for meaning ",
+   "As a systems thinker, I believe that's where the layers of a",
+   "Intention sounds like a euphemism for 'whatever the loudest ",
+   "Bram, that's a common critique, but intention is more about ",
+   "As I see it, we need to look at crowds from a historical per",
+   "Crowds are like the aunt at family reunions, always making a",
+   "That wise look of hers means nothing, it's the outcome of he",
+   "Historical precedent is all well and good, but what does it ",
+   "How does being part of a crowd make you feel, rather than th",
+   "I see the crowd as interconnected nodes, with wisdom emergin"
+  ]
+ },
+ "marginal": [
+  {
+   "text": "I've monitored past conversations about group dynamics; it s",
+   "score": 0.45,
+   "carried": true,
+   "worth": 0.44
+  },
+  {
+   "text": "Bram, that's a common critique, but intention is more about ",
+   "score": 0.47,
+   "carried": false,
+   "worth": 0.52
+  },
+  {
+   "text": "As I see it, we need to look at crowds from a historical per",
+   "score": 0.42,
+   "carried": false,
+   "worth": 0.49
+  },
+  {
+   "text": "Crowds are like the aunt at family reunions, always making a",
+   "score": 0.49,
+   "carried": false,
+   "worth": 0.45
+  },
+  {
+   "text": "That wise look of hers means nothing, it's the outcome of he",
+   "score": 0.41,
+   "carried": false,
+   "worth": 0.42
+  },
+  {
+   "text": "Historical precedent is all well and good, but what does it ",
+   "score": 0.45,
+   "carried": false,
+   "worth": 0.48
+  },
+  {
+   "text": "How does being part of a crowd make you feel, rather than th",
+   "score": 0.47,
+   "carried": false,
+   "worth": 0.52
+  }
+ ],
+ "policy": "A_strict",
+ "probabilities": {
+  "B_broad": 0.16,
+  "A_strict": 0.84
+ },
+ "stricter_better": 0.61,
+ "more_leaks_better": 0.51
+}
