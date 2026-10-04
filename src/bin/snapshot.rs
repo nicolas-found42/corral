@@ -246,6 +246,9 @@ fn demo_room(seed: &str) -> Room {
             m.move_ = ["claim", "evidence", "question", "rebuttal", "analogy"][(turn as usize) % 5]
                 .to_string();
             m.composite = if turn.is_multiple_of(3) { 0.66 } else { 0.41 };
+            // Exercise the judged open-question field: a line that asks something and
+            // was not answered reads as open; a statement reads as resolved.
+            m.answers_open = if tx.contains('?') { 0.21 } else { 0.74 };
             t.messages.push(m);
         }
     }
@@ -284,10 +287,36 @@ fn demo_room(seed: &str) -> Room {
         ]
         .into_iter()
         .collect();
-        for p in PROPOSITIONS {
+        // Diverge the three trajectories so the fan shows the SHAPE of the table's
+        // movement: agreement rising, division falling, novelty wandering around the
+        // middle -- which is what a real run produces and what the fan is for.
+        let demo_beliefs = [
+            vec![0.30, 0.38, 0.47, 0.58, 0.67, 0.74],
+            vec![0.72, 0.64, 0.55, 0.46, 0.37, 0.29],
+            vec![0.50, 0.53, 0.56, 0.52, 0.58, 0.61],
+        ];
+        for (i, p) in PROPOSITIONS.iter().enumerate() {
             t.belief_history
-                .insert(p.to_string(), vec![0.4, 0.45, 0.5, 0.55, 0.6, 0.62]);
+                .insert(p.to_string(), demo_beliefs[i].clone());
         }
+        // and a short gauge history, so each band's micro-weather has something to draw
+        t.history = [
+            ("heat".to_string(), vec![0.40, 0.48, 0.55, 0.61, 0.66, 0.72]),
+            (
+                "drift".to_string(),
+                vec![0.30, 0.26, 0.22, 0.20, 0.18, 0.17],
+            ),
+            (
+                "novelty".to_string(),
+                vec![0.52, 0.58, 0.61, 0.60, 0.62, 0.63],
+            ),
+            (
+                "consensus".to_string(),
+                vec![0.30, 0.33, 0.37, 0.39, 0.40, 0.41],
+            ),
+        ]
+        .into_iter()
+        .collect();
         t.judgement.chosen = t.members[1].to_string();
         t.judgement.pick_confidence = 0.71;
         t.judgement.move_ = "evidence".to_string();

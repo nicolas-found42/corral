@@ -370,6 +370,7 @@ impl Session {
                 m.asserts_claim = j.asserts_claim;
                 m.stance = j.stance.clone();
                 m.cohesion = j.cohesion;
+                m.answers_open = j.answers_open;
                 self.room.tables[i].messages.push(m);
                 if let Some(s) = self.room.llamas.get_mut(speaker) {
                     s.spoken += 1;

@@ -1,90 +1,90 @@
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  ◆ THE CORRAL   five tables, one seed, and Jev between them   STOPPED   round 10   ⏱ 01:33   $0.0117   ⇄ 3                                         ┃
-┃ seed “is a crowd wiser than any one of us, or just louder?”                                                                                        ┃
-┃ ━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔ ┃
+┃ seed “is a crowd wiser than any one of us, or…” ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅ ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- 1 Table 1   2 Table 2   3 Table 3   4 Table 4   5 Table 5   [ o overview ]                                                                           
-╭the five tables · press 1-5 to open one─────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│  ◆ Table 1   ◼Byte ◆Gus △Juni ▲Kest   ⇄ heard 1   2 lines                                                                                          │
-│    on  “I've monitored past conversations about group dynamics; it seems that when the noise decreases, insight incre…”                            │
-│    ◆ Gus ● ★  A quiet beaver builds a strong dam, not a loud w…                                                                                    │
-│    ⟪heard⟫ ▼ Dexter ▹  I've monitored past conversations about group dynamics; it seems that when the noise decreases, insight incre…              │
-│  ················································································································································  │
-│  ◆ Table 2   ▼Dext ✦Nimb ✧Cosm ■Orso   4 lines                                                                                                     │
-│    on  “50% threshold doesn't account for information redundancy”                                                                                  │
-│    ▼ Dexter ▹  I've monitored past conversations about group dy…                                                                                   │
-│    ✧ Cosmo ?  Nimbus, Orson's words are symptoms, not roots. What's the wound a crowd's fervor aims to heal?                                       │
-│    ◼ Byte ⊗ ★  50% threshold doesn't account for information redundancy                                                                            │
-│  ················································································································································  │
-│  ◆ Table 3   ✱Vera ▽Mari ✳Onyx ○Palo   8 lines                                                                                                     │
-│    on  “As I listened to the sound of 12 hammers tapping together in perfect rhythm at the art studio, I realized harmony was born not from ind…”  │
-│    ○ Paloma ●  Marisol, I think Vera's point is still relevant, yet your experience at the art studio showcases how collective input can lead to…  │
-│    ✳ Onyx ▹ ★  Livia, collective input can indeed yield unique solutions, but the true challenge lies in distinguishing genuine group intelligenc… │
-│    ▽ Marisol ?  As I listened to the sound of 12 hammers tapping together in perfect rhythm at the art studio, I realized harmony was born not fr… │
-│  ················································································································································  │
-│  ◆ Table 4   ☆Bram ★Sabl ⊕Fern □Till   ⇄ heard 2   14 lines                                                                                        │
-│    on  “Historical precedent is all well and good, but what does it matter when the outcome is still someone's ego inflating?”                     │
-│    □ Tilly ▹  Actually, I think I just spotted Luna at table 2, looking so wise, and she was nodding in agreement, you know, that wise look of he… │
-│    ☆ Bram ? ★  That wise look of hers means nothing, it's the outcome of her thoughts we should be worried about, not the manner in which they're… │
-│    ★ Sable ⊗  Historical precedent is all well and good, but what does it matter when the outcome is still someone's ego inflating?                │
-│  ················································································································································  │
-│  ◆ Table 5   ⊙Quil ❋Pip ✦Wren ⊞Ada   8 lines                                                                                                       │
-│    on  “Does the thought of redundancy make you feel safer, Ada, or more anxious about the potential for failure?”                                 │
-│    ✦ Wren ●  Being part of a crowd can be overwhelming and make me feel lost in the sea of voices.                                                 │
-│    ⊞ Ada ▹ ★  In such networks, each node's influence varies widely, with some holding greater sway than others, and the system's strength lies i… │
-│    ✦ Wren ?  Does the thought of redundancy make you feel safer, Ada, or more anxious about the potential for failure?                             │
-│                                                                                                                                                    │
-│                                                                                                                                                    │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭the wire · 3 eavesdrops, one-way────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│     T1         T2          T3         T4         T5                                                                                                │
-│      │          │           │          ▸──────────●       T5 ⟶ T4  round 8  Ada  “As a systems thinker, I believe that's where the layers of a…”   │
-│      ▸──────────●           │          │          │       T2 ⟶ T1  round 10  Dexter  “I've monitored past conversations about group dynamics; i…”  │
-│    ↳ the newest line to cross: Dexter at table 2 → table 1 — “I've monitored past conversations about group dynamics; it seems that when the nois… │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
- the five tables   ·  1-5 open a table  ·  o overview  ·  t seed  ·  s save  ·  h help  ·  q quit   ·  the tables have closed                         
+ 1 Table 1  2 Table 2  3 Table 3  4 Table 4  5 Table 5  [ o overview ]                                                                                
+ heat T1 ██████·· T2 ██████·· T3 ██████·· T4 ██████·· T5 ██████··                                                                                     
+ ▎Table 1 ◼Byte ◆Gus △Juni ▲Kest   2 lines   ⇄ heard 1   ▃▃▅▅▅▅ ▃▃▁▁▁▁ ▅▅▅▅▅▅                                                                         
+ ▎  on  “I've monitored past conversations about group dynamics; it seems that when the noise decreases, insight incre…”                              
+ │⟪heard⟫ ▼ Dexter · ▹  — I've monitored past conversations about group                                                                               
+ │                        dynamics; it seems that when the noise decreases,                                                                           
+ │                        insight incre…                                                                                                              
+                                                                                                                                                      
+ ▎Table 2 ▼Dext ✦Nimb ✧Cosm ■Orso   4 lines   ?1 open   ▃▃▅▅▅▅ ▃▃▁▁▁▁ ▅▅▅▅▅▅                                                                          
+ ▎  on  “50% threshold doesn't account for information redundancy”                                                                                    
+ ▎◼ Byte · ⊗  — 50% threshold doesn't account for information redundancy ★                                                                            
+                                                                                                                                                      
+ ▎Table 3 ✱Vera ▽Mari ✳Onyx ○Palo   8 lines   ▃▃▅▅▅▅ ▃▃▁▁▁▁ ▅▅▅▅▅▅                                                                                    
+ ▎  on  “As I listened to the sound of 12 hammers tapping together in perfect rhythm at the art studio, I realized harmony was born not from…”        
+ ▎▽ Marisol · ?  — As I listened to the sound of 12 hammers tapping together                                                                          
+ ▎                 in perfect rhythm at the art studio, I realized harmony was                                                                        
+ ▎                 born not from individual loudness, but from shared vision.                                                                         
+                                                                                                                                                      
+ ▎Table 4 ☆Bram ★Sabl ⊕Fern □Till   14 lines   ⇄ heard 2   ?2 open   ▃▃▅▅▅▅ ▃▃▁▁▁▁ ▅▅▅▅▅▅                                                             
+ ▎  on  “Historical precedent is all well and good, but what does it matter when the outcome is still someone's ego inflating?”                       
+ ▎? ★ Sable · ⊗  — Historical precedent is all well and good, but what does it                                                                        
+ ▎                 matter when the outcome is still someone's ego inflating?                                                                          
+                                                                                                                                                      
+ ▎Table 5 ⊙Quil ❋Pip ✦Wren ⊞Ada   8 lines   ?2 open   ▃▃▅▅▅▅ ▃▃▁▁▁▁ ▅▅▅▅▅▅                                                                            
+ ▎  on  “Does the thought of redundancy make you feel safer, Ada, or more anxious about the potential for failure?”                                   
+ ▎? ✦ Wren · ?  — Does the thought of redundancy make you feel safer, Ada, or                                                                         
+ ▎                more anxious about the potential for failure?                                                                                       
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+ ─ the wire────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+       T1         T2          T3         T4         T5                                                                                                
+        │          ●───────────┼──────────▸          │       T2 ⟶ T4  round 6  Cosmo  “Nimbus, Orson's words are symptoms, not roots. What's the…”    
+        │          │           │          ▸──────────●       T5 ⟶ T4  round 8  Ada  “As a systems thinker, I believe that's where the layers of a…”   
+        ▸══════════●           │          │          │       T2 ⟶ T1  round 10  Dexter  “I've monitored past conversations about group dynamics; it…” 
+    ↳ the newest line to cross: Dexter at table 2 → table 1 — “I've monitored past conversations about group dynamics; it seems that when the noise…” 
+ the five tables  ·  1-5 open a table  ·  t seed  ·  h keys  ·  the tables have closed                                                                
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  ◆ THE CORRAL   five tables, one seed, and Jev between them   STOPPED   round 10   ⏱ 01:33   $0.0117   ⇄ 3                                         ┃
-┃ seed “is a crowd wiser than any one of us, or just louder?”                                                                                        ┃
-┃ ━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔━▔ ┃
+┃ seed “is a crowd wiser than any one of us, or…” ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅ ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
- 1 Table 1   2 Table 2   3 Table 3   4 Table 4   5 Table 5   [ o overview ]                                                                           
-╭the judge · jev-1.13────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ next to speak  —  the tables are closed      last line  ▹ evidence, a support  ·  flows 0.78                                                       │
-│ heat      0.72                      consensus 0.41                      drift     0.17                      novelty   0.63                         │
-│ quiet   ├───────────•────┤lively    split   ├──────•─────────┤agreed    on seed ├───•────────────┤off seed  stale   ├─────────•──────┤fresh        │
-│ quality ████▏ ███▌  ███▉    0.66   ▍ originality 0.70   ▍ clarity 0.60   ▍ insight 0.65                                                            │
-│ Jev's verdict  “the room keeps redefining its own question”                                                                                        │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭Table 4 · newest at the bottom──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│    ▲ 10 older lines above                                                                                                                          │
-│ ⊕ Fern  ● claim                                                                                                                                    │
-│    Tension, the mood matches Sable's wry remark.                                                                                                   │
-│                                                                                                                                                    │
-│ □ Tilly  ▹ evidence                                                                                                                                │
-│    Actually, I think I just spotted Luna at table 2, looking so wise, and she was nodding in agreement, you know, that wise look of hers really    │
-│    means something.                                                                                                                                │
-│                                                                                                                                                    │
-│ ☆ Bram  ? question  ★                                                                                                                              │
-│    That wise look of hers means nothing, it's the outcome of her thoughts we should be worried about, not the manner in which they're delivered.   │
-│                                                                                                                                                    │
-│ ★ Sable  ⊗ rebuttal                                                                                                                                │
-│    Historical precedent is all well and good, but what does it matter when the outcome is still someone's ego inflating?                           │
-│                                                                                                                                                    │
-│                                                                                                                                                    │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-╭the roster · eagerness ▏ who has spoken───────────────────╮╭what this table believes · h for the full sentences─────────────────────────────────────╮
-│  ☆ Bram          0×   ⊕ Fern          0×                 ││ agreed   ▄▄▄▅▅▅ 0.62                                                                   │
-│ ▶★ Sable         0×   □ Tilly         0×                 ││ divided  ▄▄▄▅▅▅ 0.62                                                                   │
-│                                                          ││ novel    ▄▄▄▅▅▅ 0.62                                                                   │
-│                                                          ││                                                                                        │
-│                                                          ││                                                                                        │
-╰──────────────────────────────────────────────────────────╯╰────────────────────────────────────────────────────────────────────────────────────────╯
-╭the wire · 3 eavesdrops, one-way────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│     T1         T2          T3         T4         T5                                                                                                │
-│      │          ●───────────┼──────────▸          │       T2 ⟶ T4  round 6  Cosmo  “Nimbus, Orson's words are symptoms, not roots. What's the w…”  │
-│      │          │           │          ▸──────────●       T5 ⟶ T4  round 8  Ada  “As a systems thinker, I believe that's where the layers of a…”   │
-│      ▸──────────●           │          │          │       T2 ⟶ T1  round 10  Dexter  “I've monitored past conversations about group dynamics; i…”  │
-│    ↳ the newest line to cross: Dexter at table 2 → table 1 — “I've monitored past conversations about group dynamics; it seems that when the nois… │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
- table 4   ·  o overview  ·  Tab next  ·  1-5 switch  ·  space pause  ·  s save  ·  h help  ·  q quit   ·  the tables have closed                     
+ 1 Table 1  2 Table 2  3 Table 3  4 Table 4  5 Table 5  [ o overview ]                                                                                
+ ─ the judge · jev-1.13────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+  Jev's verdict  “the room keeps redefining its own question”                                                                                         
+  next to speak  —  the tables are closed      last line  ▹ evidence, a support  ·  flows 0.78                                                        
+ heat 0.72 quiet ├───────────────────────────────•────────────┤ lively  consensus 0.41 split ├──────────────────•─────────────────────────┤ agreed    
+ drift 0.17 on seed ├───────•────────────────────────────────────┤ off seed  novelty 0.63 stale ├───────────────────────────•────────────────┤ fresh  
+  quality ████▏ ███▌  ███▉    0.66   originality   clarity   insight                                                                                  
+ ─ Table 4 · newest at the bottom──────────────────────────────────────────────────────────────────────────────────────────── ▲ 6 older lines above ─ 
+                                                                                                                                                      
+                                                                                                                                                      
+ ▎★ Sable · ▹  — Intention sounds like a euphemism for 'whatever the loudest                                                                          
+ ▎               person says' ★                                                                                                                       
+ ▎☆ Bram · ?  — Bram, that's a common critique, but intention is more about                                                                           
+ ▎              collective goals than just the loudest voice                                                                                          
+ ▎☆ Bram · ⊗  — As I see it, we need to look at crowds from a historical                                                                              
+ ▎              perspective, where the loudest voices often led to chaos.                                                                             
+ ▎★ Sable · ≈  — Crowds are like the aunt at family reunions, always making a                                                                         
+ ▎               scene but not necessarily knowing anything. ★                                                                                        
+ ▎⊕ Fern · ●  — Tension, the mood matches Sable's wry remark.                                                                                         
+ ▎□ Tilly · ▹  — Actually, I think I just spotted Luna at table 2, looking so                                                                         
+ ▎               wise, and she was nodding in agreement, you know, that wise                                                                          
+ ▎               look of hers really means something.                                                                                                 
+ ▎☆ Bram · ?  — That wise look of hers means nothing, it's the outcome of her                                                                         
+ ▎              thoughts we should be worried about, not the manner in which                                                                          
+ ▎              they're delivered. ★                                                                                                                  
+ ▎? ★ Sable · ⊗  — Historical precedent is all well and good, but what does it                                                                        
+ ▎                 matter when the outcome is still someone's ego inflating?                                                                          
+ ─ the roster · eagerness ▏ who has spoken─────────────────  ─ what this table believes  agreed 0.74  divided 0.29  novel 0.61─────────────────       
+  ☆ Bram          0× │ ▶★ Sable         0×                                                                                                            
+ ─────────────────────────────────────────                     ▆▆  ▆▆                                                                                 
+  ⊕ Fern          0× │  □ Tilly         0×                     ▄▅▅▅▅▅                                                                                 
+                                                               ▃   ▃▃                                                                                 
+                                                                                                                                                      
+ ─ the wire────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 3 eavesdrops, one-way ─ 
+       T1         T2          T3         T4         T5                                                                                                
+        │          ●───────────┼──────────▸          │       T2 ⟶ T4  round 6  Cosmo  “Nimbus, Orson's words are symptoms, not roots. What's the…”    
+        │          │           │          ▸──────────●       T5 ⟶ T4  round 8  Ada  “As a systems thinker, I believe that's where the layers of a…”   
+        ▸══════════●           │          │          │       T2 ⟶ T1  round 10  Dexter  “I've monitored past conversations about group dynamics; it…” 
+    ↳ the newest line to cross: Dexter at table 2 → table 1 — “I've monitored past conversations about group dynamics; it seems that when the noise…” 
+                                                                                                                                                      
+ table 4  ·  Tab next  ·  space pause  ·  h keys                                                                                                      

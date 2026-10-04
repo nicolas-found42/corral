@@ -14,7 +14,7 @@
 use std::io::Write;
 use std::sync::atomic::Ordering;
 use std::sync::Arc;
-use std::time::{Duration, Instant};
+use std::time::Duration;
 
 use crossterm::event::{Event, KeyCode, KeyEventKind};
 use ratatui::backend::CrosstermBackend;
@@ -101,6 +101,11 @@ fn main() {
 
 fn run() -> Result<(), String> {
     let args = parse_args()?;
+    // Resolve the palette for the terminal we are actually on, once: truecolor, a
+    // pinned 256-colour map, or the 16 base names. (Jev 0.97 for the three tiers.)
+    tui::set_depth(detect_depth());
+    // The cross-tool NO_COLOR convention (https://no-color.org) drives flat mode.
+    let force_flat = no_color();
 
     if args.once {
         let room = empty_room(
@@ -111,6 +116,7 @@ fn run() -> Result<(), String> {
         let cfg = Cfg {
             draws: args.draws,
             max_rounds: args.rounds,
+            flat: force_flat,
             ..Default::default()
         };
         let (w, h) = terminal_size();
@@ -140,7 +146,7 @@ fn run() -> Result<(), String> {
     let cfg = Cfg {
         draws: args.draws.clamp(1, 4),
         max_rounds: args.rounds,
-        flat: false,
+        flat: force_flat,
         hint: false,
         frame: 0,
     };
@@ -244,8 +250,6 @@ async fn run_tui(seed: String, cfg: Cfg, rng_seed: i64) -> Result<(), String> {
     let mut terminal = setup_terminal()?;
     let mut cfg = cfg;
     let mut ticker = tokio::time::interval(Duration::from_millis(100));
-    let mut last = Instant::now();
-    let mut effect = tui::shimmer();
     let mut commands: Vec<KeyCode> = Vec::new();
     let mut focus = -1i32;
 
@@ -313,8 +317,6 @@ async fn run_tui(seed: String, cfg: Cfg, rng_seed: i64) -> Result<(), String> {
 
         let mut snapshot = rx.borrow().clone();
         snapshot.focus = focus;
-        let dt = last.elapsed();
-        last = Instant::now();
         cfg.frame = cfg.frame.wrapping_add(1);
         let draws = cfg.draws;
         terminal
@@ -323,11 +325,11 @@ async fn run_tui(seed: String, cfg: Cfg, rng_seed: i64) -> Result<(), String> {
                     draws,
                     ..cfg.clone()
                 };
+                // The whole-frame dissolve is gone (Jev 0.97): it scrambled every
+                // glyph the reader was reading. The frame's one animated element is
+                // the braille pulse on the wire, computed inside `paint` from the
+                // frame counter, so nothing is painted onto the buffer afterwards.
                 tui::paint(f, &snapshot, &c);
-                if !c.flat {
-                    let area = f.area();
-                    tui::apply_effect(&mut effect, f.buffer_mut(), area, dt);
-                }
             })
             .map_err(|e| format!("draw: {e}"))?;
         ticker.tick().await;
@@ -427,6 +429,34 @@ fn restore_terminal(
 
 fn terminal_size() -> (u16, u16) {
     crossterm::terminal::size().unwrap_or((150, 45))
+}
+
+/// What colour the terminal can actually show. `COLORTERM` is the cross-terminal
+/// convention for truecolor; a `TERM` mentioning 256 or a 256-`COLORS` count means
+/// the indexed tier; anything else gets the 16 base names.
+fn detect_depth() -> tui::Depth {
+    let ct = std::env::var("COLORTERM")
+        .unwrap_or_default()
+        .to_lowercase();
+    if ct.contains("truecolor") || ct.contains("24bit") {
+        return tui::Depth::Truecolour;
+    }
+    let term = std::env::var("TERM").unwrap_or_default().to_lowercase();
+    let colors: Option<u32> = std::env::var("COLORS").ok().and_then(|c| c.parse().ok());
+    if term.contains("256color") || colors.map(|c| c >= 256).unwrap_or(false) {
+        return tui::Depth::Indexed;
+    }
+    if term.is_empty() || term == "dumb" {
+        return tui::Depth::Ansi;
+    }
+    tui::Depth::Indexed
+}
+
+/// The cross-tool convention: any non-empty NO_COLOR means no colour at all.
+fn no_color() -> bool {
+    std::env::var("NO_COLOR")
+        .map(|v| !v.is_empty())
+        .unwrap_or(false)
 }
 
 // Keep the Arc import meaningful even if a future refactor drops the pause handle.

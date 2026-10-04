@@ -548,6 +548,11 @@ impl Conductor {
                 json!({"type": "noul",
                     "instructions": "Does the most recent message assert a specific, checkable claim or figure, rather than only asking a question or expressing a feeling?"}),
             );
+            q.insert(
+                "answers_open".to_string(),
+                json!({"type": "noul",
+                    "instructions": "Does the most recent message answer a question this table had left open, rather than raising a new question or changing the subject?"}),
+            );
             q.insert("st_support".to_string(), json!({"type": "noul", "instructions": "The most recent message, compared with the line it answers: does it agree with or support that line?"}));
             q.insert("st_challenge".to_string(), json!({"type": "noul", "instructions": "The most recent message, compared with the line it answers: does it disagree with, correct or push back on that line?"}));
             q.insert("st_build".to_string(), json!({"type": "noul", "instructions": "The most recent message, compared with the line it answers: does it build on and extend that line?"}));
@@ -853,6 +858,16 @@ impl Conductor {
                 false
             } else {
                 cl.iter().sum::<f64>() / cl.len() as f64 >= 0.5
+            };
+            let ao: Vec<f64> = good
+                .iter()
+                .filter_map(|r| r.answers.get("answers_open"))
+                .map(noul_of)
+                .collect();
+            j.answers_open = if ao.is_empty() {
+                0.0
+            } else {
+                round3(ao.iter().sum::<f64>() / ao.len() as f64)
             };
             let mut sp: BTreeMap<String, f64> = BTreeMap::new();
             for name in STANCES {

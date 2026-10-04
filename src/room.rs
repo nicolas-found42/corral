@@ -151,6 +151,9 @@ pub struct Message {
     pub asserts_claim: bool,
     pub stance: String,
     pub cohesion: f64,
+    /// Judged: did this line answer a question the table had left open? Low +
+    /// a question mark in the text means the line left something unresolved.
+    pub answers_open: f64,
 }
 
 impl Message {
@@ -170,7 +173,14 @@ impl Message {
             asserts_claim: false,
             stance: String::new(),
             cohesion: 0.0,
+            answers_open: 0.0,
         }
+    }
+
+    /// A question the room asked and nobody answered: the judged field says this line
+    /// did not resolve an open question, and the line itself is asking one.
+    pub fn left_open(&self) -> bool {
+        self.answers_open > 0.0 && self.answers_open < 0.4 && self.text.contains('?')
     }
 
     pub fn persona(&self) -> &'static Persona {
@@ -234,6 +244,8 @@ pub struct Judgement {
     pub beliefs: BTreeMap<String, f64>,
     pub verdict: String,
     pub calls_last: u32,
+    /// Judged per turn: did the newest line answer an open question, or leave one?
+    pub answers_open: f64,
 }
 
 /// A one-way eavesdrop: table `src` was overheard by table `dst`.

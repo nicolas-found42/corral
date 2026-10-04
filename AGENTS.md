@@ -39,7 +39,7 @@ maintainer's machine). **Never print, commit or echo the key** — it is read on
 | `src/judge.rs` | the Conductor: per-table batched Jev fan-out, eavesdrop picker, seed screening, verdicts |
 | `src/herd.rs` | the llama writers, strict-JSON replies with repair |
 | `src/session.rs` | the round loop: five tables in parallel, then the eavesdrop check |
-| `src/tui.rs` | overview (five ticker rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) |
+| `src/tui.rs` | overview (heat ribbon + five table bands + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) as one-sided hairlines, the braille wire pulse, the three-tier palette |
 | `src/bin/` | `corral` (entry point, key input, headless, `--once`), `snapshot`, `experiments`, `experiment_review`, `ab_test`, `method_compare` |
 | `src/rng.rs` | CPython's Mersenne Twister, ported exactly, so `--rng` reproduces the leaks |
 | `src/corpus.rs` | the 36 real transcript lines the experiments read |
