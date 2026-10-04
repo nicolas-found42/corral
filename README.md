@@ -2,13 +2,20 @@
 
 A terminal app where **twenty cheap 2024 Meta Llama 3.1 8B instances** (`meta-llama/llama-3.1-8b-instruct`, $0.05/$0.08 per M tokens) sit as **five tables of four**, all talking at once about **one shared seed**, refereed live by **TypeSafe Jev 1.13** — and occasionally **overhearing each other**.
 
+Written in **Rust** (ratatui + tachyonfx + colorgrad on tokio). Jev is called straight
+at OpenRouter's System One endpoint, so the judgement model is the whole product and
+the only heavy dependency is the HTTP stack the app already needed.
+
 ```
-uv run corral.py                      # asks for a seed, then runs
-uv run corral.py -t "your seed"       # go straight to it (any text: a question, a topic, a sentence)
-uv run corral.py -t "..." -n 6        # six rounds then stop
-uv run corral.py --headless -t "..."  # no TUI: stream all five chats (scriptable)
-uv run corral.py --once               # render one frame and exit (no network)
-uv run snapshot.py -t "..." -n 10 -o corral.svg   # a still of a real run (overview + detail)
+cargo run                              # asks for a seed, then runs
+cargo run -- -t "your seed"            # go straight to it (any text: a question, a topic, a sentence)
+cargo run -- -t "..." -n 6             # six rounds then stop
+cargo run -- --headless -t "..."       # no TUI: stream all five chats (scriptable)
+cargo run -- --once                    # render one frame and exit (no network)
+cargo run --bin snapshot -- --demo -o corral.svg   # a still, offline from the corpus
+cargo run --bin snapshot -- -t "..." -n 10 -o corral.svg   # a still of a real run
+
+cargo test                             # the offline suite (no network, no spend)
 ```
 
 Keys: **1-5** open a table · **o** overview · **Tab/.** cycle · **t** new seed · **space** pause · **s** save · **f** flat · **h** help · **q** quit.
@@ -86,14 +93,20 @@ A 10-round run is about **$0.012** — five tables of judging for a little over 
 
 | file | what |
 | --- | --- |
-| `personas.py` | the twenty llamas: sigil, colour, family, voice |
-| `room.py` | `Room` (five tables, the wire), `Table` (one conversation), the composite weights, the duplicate guard |
-| `judge.py` | the Conductor: the per-table fan-out, the eavesdrop picker, seed screening, verdicts |
-| `herd.py` | the llama-3.1-8b writers, strict-JSON replies with repair |
-| `session.py` | the round loop: all five tables in parallel, then the eavesdrop check |
-| `tui.py` | overview (five ticker rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) |
-| `corral.py` | entry point, key input, headless mode |
-| `snapshot.py` | render a real run to SVG + text |
+| `src/personas.rs` | the twenty llamas: sigil, colour, family, voice |
+| `src/room.rs` | `Room` (five tables, the wire), `Table` (one conversation), the composite weights, the duplicate guard |
+| `src/judge.rs` | the Conductor: the per-table fan-out, the eavesdrop picker, seed screening, verdicts (direct on OpenRouter's `/v1/systemone`) |
+| `src/herd.rs` | the llama-3.1-8b writers, strict-JSON replies with repair |
+| `src/session.rs` | the round loop: all five tables in parallel, then the eavesdrop check |
+| `src/tui.rs` | overview (five ticker rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire), plus the SVG/text export |
+| `src/bin/snapshot.rs` | render a real run (or, with `--demo`, the corpus) to SVG + text |
+| `src/rng.rs` | CPython's Mersenne Twister, ported exactly, so `--rng` reproduces the Python app's leaks |
+| `src/corpus.rs` | the 36 real transcript lines the experiments read |
+| `src/experiments.rs` + `src/bin/experiments.rs` | the eight Jev-only experiments |
+| `src/bin/experiment_review.rs` | Jev grading its own experiments; keep / drop / next |
+| `src/bin/ab_test.rs` | A/B of two eavesdrop gate policies |
+| `src/bin/method_compare.rs` | primitive comparison and phrasing-stability measurement |
+| `src/lib.rs` | crate root (`api_key()` reads `OPENROUTER_API_KEY`) |
 
 ## A note on the completion gate
 

@@ -16,42 +16,42 @@ experiments found lives in [`FINDINGS.md`](./FINDINGS.md).
 ## Getting set up
 
 ```sh
-uv sync --python 3.11 --all-extras   # Python 3.11 is pinned deliberately
-uv run corral.py                     # asks for a seed, then runs
-uv run corral.py --once              # render one frame, no network
+cargo build --release                # builds the app and its binaries
+cargo test                           # the offline suite (no network, no spend)
+cargo run                            # asks for a seed, then runs
+cargo run -- --once                  # render one frame, no network
 ```
 
 `OPENROUTER_API_KEY` must be in the environment (it lives in `~/.zshenv` on the
-maintainer's machine). **Never print, commit or echo the key** — it is passed only
-to the SDK clients.
+maintainer's machine). **Never print, commit or echo the key** — it is read once in
+`lib.rs::api_key()` and passed only to the two HTTP clients.
 
 ## Layout
 
 | file | what |
 | --- | --- |
-| `personas.py` | the twenty llamas: sigil, colour, voice family, voice |
-| `room.py` | `Room` (five tables, the wire), `Table` (one conversation), composite weights, duplicate guard |
-| `judge.py` | the Conductor: per-table batched Jev fan-out, eavesdrop picker, seed screening, verdicts |
-| `herd.py` | the llama writers, strict-JSON replies with repair |
-| `session.py` | the round loop: five tables in parallel, then the eavesdrop check |
-| `tui.py` | overview (five table rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) |
-| `corral.py` | entry point, key input, headless mode |
-| `corpus.py` | the 36 real transcript lines the experiments read |
-| `experiments.py` | the eight Jev-only experiments |
-| `experiment_review.py` | Jev grading its own experiments; keep / drop / next |
-| `ab_test.py` | A/B of two eavesdrop gate policies |
-| `method_compare.py` | primitive comparison and phrasing-stability measurement |
+| `src/personas.rs` | the twenty llamas: sigil, colour, voice family, voice |
+| `src/room.rs` | `Room` (five tables, the wire), `Table` (one conversation), composite weights, duplicate guard |
+| `src/judge.rs` | the Conductor: per-table batched Jev fan-out, eavesdrop picker, seed screening, verdicts |
+| `src/herd.rs` | the llama writers, strict-JSON replies with repair |
+| `src/session.rs` | the round loop: five tables in parallel, then the eavesdrop check |
+| `src/tui.rs` | overview (five ticker rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) |
+| `src/bin/` | `corral` (entry point, key input, headless, `--once`), `snapshot`, `experiments`, `experiment_review`, `ab_test`, `method_compare` |
+| `src/rng.rs` | CPython's Mersenne Twister, ported exactly, so `--rng` reproduces the leaks |
+| `src/corpus.rs` | the 36 real transcript lines the experiments read |
+| `src/experiments.rs` | the eight Jev-only experiments |
+| `tests/port.rs` | the offline suite ported from the original |
 
 ## Commands
 
 ```sh
-uv run pytest -q                     # the offline suite (no network, no spend)
-uv run corral.py --headless -t "..." -n 6   # scriptable; streams all five chats
-uv run snapshot.py -t "..." -n 10 -o corral.svg
-uv run experiments.py                # Jev-only; no llama calls
-uv run experiment_review.py
-uv run ab_test.py
-uv run method_compare.py
+cargo test                           # the offline suite (no network, no spend)
+cargo run -- --headless -t "..." -n 6   # scriptable; streams all five chats
+cargo run --bin snapshot -- --demo -o corral.svg   # offline still from the corpus
+cargo run --bin experiments          # Jev-only; no llama calls
+cargo run --bin experiment_review
+cargo run --bin ab_test
+cargo run --bin method_compare
 ```
 
 ## Conventions

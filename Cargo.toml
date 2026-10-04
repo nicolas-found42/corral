@@ -1,0 +1,20 @@
+[package]
+name = "corral"
+version = "0.1.0"
+edition = "2021"
+default-run = "corral"
+description = "A TUI where twenty cheap 2024 Meta Llama 3.1 8B agents hold a group chat about a topic you type, and TypeSafe Jev conducts the room live."
+
+[dependencies]
+colorgrad = "0.9.0"
+crossterm = "0.29.0"
+futures = "0.3.34"
+ratatui = "0.30.2"
+regex = "1.13.1"
+reqwest = { version = "0.13.5", default-features = false, features = ["rustls", "json"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.151", features = ["preserve_order"] }
+tachyonfx = { version = "0.25.2", features = ["std-duration"] }
+tokio = { version = "1.53.2", features = ["full"] }
+
+[dev-dependencies]

@@ -1,11 +1,7 @@
-# venv and caches
-.venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-launch.sh
+# build artifacts
+/target
 
-# demo artifacts (regenerate with snapshot.py)
+# demo artifacts
 corral.png
 
 # saved conversations
@@ -14,3 +10,6 @@ corral-*.txt
 # local launch helpers
 launch.sh
 The Corral.command
+
+# rust
+**/*.rs.bk
