@@ -1,0 +1,7 @@
+#!/bin/sh
+# Pre-commit: keep every commit formatted, lint-clean and green.
+# Activated per clone with:  git config core.hooksPath .githooks
+set -e
+cargo fmt --all --check
+cargo clippy --all-targets -- -D warnings
+cargo test --quiet

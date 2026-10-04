@@ -20,7 +20,11 @@ cargo build --release                # builds the app and its binaries
 cargo test                           # the offline suite (no network, no spend)
 cargo run                            # asks for a seed, then runs
 cargo run -- --once                  # render one frame, no network
+git config core.hooksPath .githooks  # enable the pre-commit hook (fmt · clippy · test)
 ```
+
+`.github/workflows/ci.yml` runs the same three checks. Re-run them by hand with
+`cargo fmt --all --check && cargo clippy --all-targets -- -D warnings && cargo test`.
 
 `OPENROUTER_API_KEY` must be in the environment (it lives in `~/.zshenv` on the
 maintainer's machine). **Never print, commit or echo the key** — it is read once in
