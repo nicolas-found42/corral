@@ -34,7 +34,7 @@ to the SDK clients.
 | `judge.py` | the Conductor: per-table batched Jev fan-out, eavesdrop picker, seed screening, verdicts |
 | `herd.py` | the llama writers, strict-JSON replies with repair |
 | `session.py` | the round loop: five tables in parallel, then the eavesdrop check |
-| `tui.py` | overview (five cards + the wire) and detail (one table) |
+| `tui.py` | overview (five table rows + the wire lattice) and detail (judge band · transcript · roster/beliefs · wire) |
 | `corral.py` | entry point, key input, headless mode |
 | `corpus.py` | the 36 real transcript lines the experiments read |
 | `experiments.py` | the eight Jev-only experiments |

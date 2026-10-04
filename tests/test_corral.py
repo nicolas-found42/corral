@@ -236,3 +236,125 @@ def test_help_panel_lists_the_new_keys():
     out = _render(room, 150, 45, hint=True)
     for token in ["open one table", "zoom out", "new seed", "quit"]:
         assert token in out, token
+
+
+# ------------------------------------------------------- the redesign invariants
+from rich.cells import cell_len  # noqa: E402
+
+ALL_SIZES = [(150, 45), (120, 40), (100, 30), (80, 24), (60, 18)]
+
+
+def _populated() -> Room:
+    room = empty_room("is a crowd wiser than any one of us, or just louder?")
+    for t in room.tables:
+        t.summary = f"table {t.id} is chewing on the loudness question"
+        for i in range(14):
+            t.messages.append(_msg(i, t.members[i % 4], f"table {t.id} line {i} with several words in it"))
+        t.messages[-1].text = f"NEWEST_TABLE_{t.id}_LINE"
+        t.gauges = {"heat": 0.72, "consensus": 0.41, "drift": 0.17, "novelty": 0.63}
+        for p in PROPOSITIONS:
+            t.belief_history[p] = [0.4, 0.45, 0.5, 0.55, 0.6, 0.62]
+        t.judgement.chosen = t.members[1]
+        t.judgement.pick_confidence = 0.71
+        t.judgement.move = "evidence"
+        t.judgement.verdict = "the room keeps redefining its own question"
+    return room
+
+
+def test_header_never_wraps_and_nothing_overflows_the_width():
+    """A wrapped header overruns the frame; assert every line fits its width."""
+    for w, h in ALL_SIZES:
+        for focus in (-1, 3):
+            room = _populated()
+            room.focus = focus
+            out = _render(room, w, h)
+            for line in out.splitlines():
+                assert cell_len(line) <= w, f"line wider than {w}: {line!r}"
+
+
+def test_every_table_shows_its_newest_line_in_the_overview():
+    for w, h in ALL_SIZES:
+        room = _populated()
+        out = _render(room, w, h)
+        for t in room.tables:
+            assert f"NEWEST_TABLE_{t.id}_LINE" in out, f"table {t.id} starved at {w}x{h}"
+
+
+def test_all_five_tables_appear_in_the_overview_at_every_size():
+    for w, h in ALL_SIZES:
+        out = _render(_populated(), w, h)
+        for t in range(1, 6):
+            assert f"Table {t}" in out, f"Table {t} missing at {w}x{h}"
+
+
+def test_panel_titles_are_never_truncated_mid_token():
+    room = _populated()
+    room.focus = 3
+    out = _render(room, 100, 30)
+    assert "jev-1.13" in out          # not clipped to "jev-1.1"
+    assert "newest at the bottom" in out
+    assert "the judge" in out and "the roster" in out
+
+
+def test_belief_rows_use_short_names_that_stay_distinguishable():
+    room = _populated()
+    room.focus = 3
+    out = _render(room, 150, 45)
+    for name in ("agreed", "divided", "novel"):
+        assert name in out, name
+
+
+def test_every_gauge_names_both_of_its_poles_at_full_width():
+    room = _populated()
+    room.focus = 0
+    out = _render(room, 150, 45)
+    for ends in (("quiet", "lively"), ("split", "agreed"), ("on seed", "off seed"), ("stale", "fresh")):
+        assert ends[0] in out and ends[1] in out, ends
+
+
+def test_quality_legend_names_the_three_dimensions():
+    room = _populated()
+    room.focus = 0
+    out = _render(room, 150, 45)
+    for dim in ("originality", "clarity", "insight"):
+        assert dim in out, dim
+
+
+def test_the_wire_draws_a_thread_between_the_two_named_tables():
+    room = _populated()
+    room.leaks.append(Leak(round=4, src=2, dst=4, line="a striking line carried over", speaker="byte"))
+    out = _render(room, 150, 45)
+    assert "T2" in out and "T4" in out and "⟶" in out
+    assert "●" in out and "▸" in out                 # the thread ends, source and destination
+    assert "the newest line to cross" in out         # the carried line, quoted whole
+
+
+def test_flat_mode_keeps_every_sigil_and_drops_the_flare_glyph():
+    from personas import LLAMAS
+
+    room = _populated()
+    room.focus = 3
+    flat = _render(room, 150, 45, flat=True)
+    for p in LLAMAS:
+        if p.id in room.tables[3].members:
+            assert p.sigil in flat, p.id
+    assert "◆ THE CORRAL" in flat
+
+
+def test_detail_keeps_the_newest_line_down_to_60x18():
+    room = _populated()
+    room.focus = 0
+    for w, h in ALL_SIZES:
+        out = _render(room, w, h)
+        assert "NEWEST_TABLE_1_LINE" in out, f"newest clipped at {w}x{h}"
+
+
+def test_judge_degrades_to_a_compact_band_rather_than_starving_the_transcript():
+    """At a small height every gauge must still name both poles, but the transcript
+    must also keep at least its newest line: the band drops its prose, not its ends."""
+    room = _populated()
+    room.focus = 0
+    out = _render(room, 60, 18)
+    assert "quiet → lively" in out, out
+    assert "NEWEST_TABLE_1_LINE" in out, out
+
